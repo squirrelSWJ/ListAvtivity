@@ -52,7 +52,7 @@ public class CustomAdapter extends BaseAdapter {
 	public View getView(int position, View convertview, ViewGroup parent) {
 		// TODO Auto-generated method stub
 		if(convertview == null){
-			convertview = inflater.inflate(R.layout.item_row,parent);
+			convertview = inflater.inflate(R.layout.item_row,parent,false);
 		}
 		
 		ImageView pic = (ImageView) convertview.findViewById(R.id.pic);

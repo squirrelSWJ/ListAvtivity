@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import com.example.listactivity.adapter.CustomAdapter;
 import com.example.listactivity.dao.PeopleDao;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
 	ArrayList<PeopleDao> arr = new ArrayList<PeopleDao>();
 	ListView listview;
@@ -49,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
 		
 		}
 		
-		return arr;
+		return itemarr;
 	}
 	
 	@Override
