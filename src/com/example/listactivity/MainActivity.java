@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
 		
 		listview = (ListView) findViewById(R.id.listview);
 		mCustomadapter = new CustomAdapter(MainActivity.this,arr);
-		
+		listview.setAdapter(mCustomadapter);
 		
 	}
 
